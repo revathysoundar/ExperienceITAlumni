@@ -10,5 +10,7 @@
 </h1>
 
 <P>  The time on the server is ${serverTime}. </P>
+<img src="resources/Images/ExperienceITAlumniLOGO.png">
+<a href="<c:url value="/login"/>">Login</a>
 </body>
 </html>
