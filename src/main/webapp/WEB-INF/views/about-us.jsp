@@ -29,6 +29,23 @@ and decided to turn hard work and inspiration, into to an on-going way to keep s
 and connected with those who can relate to someone in their seat. 
 We are thrilled to have this ideal become more than a project, 
 and hope that it becomes another great asset in the Experience IT and Grand Circus community.
+<p>
+We hope  that you utilize the services as much as we enjoy offering them to you. 
+If you have any questions or comments ,please don't hasitae to contack us 
+Thank you
+</p>
+</div>
 
-</body>
-</html>
+<p>
+	GRAND CIRCUS DETROIT
+1570 Woodward Avenue, Level 3
+Detroit, MI 48226
+(313) 338-2780
+hello@grandcircus.co
+</p>
+<p>
+Sincerely,
+Revathy, Sadia, Mumeen, and Brent [Creator/Founders]
+</p>
+<footer>Copyright ©Experience IT Alumni</footer>
+
