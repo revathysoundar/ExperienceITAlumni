@@ -13,19 +13,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
       <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
       <style>
-      .nav-first{
-      background-color: white;
-    border-color: #E7E7E7;
       
-      }
-      .nav-second{
-      background-color: black;
-    border-color: #E7E7E7;
-      }
-	.no-margin{
-	margin-bottom:0;
 	 
-	}
+	
       
       </style>
       </head>

@@ -1,4 +1,4 @@
-package co.grandcircus.expITAlumni.Model;
+package co.grandcircus.expITAlumni.model;
 
 public class Mentor {
 

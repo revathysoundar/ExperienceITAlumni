@@ -4,7 +4,7 @@ import java.util.List;
 
 import javax.naming.NameNotFoundException;
 
-import co.grandcircus.expITAlumni.Model.Mentor;
+import co.grandcircus.expITAlumni.model.Mentor;
 
 
 
