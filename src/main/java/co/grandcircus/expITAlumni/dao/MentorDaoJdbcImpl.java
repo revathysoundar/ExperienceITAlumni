@@ -17,7 +17,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import co.grandcircus.expITAlumni.model.Mentor;
+import co.grandcircus.expITAlumni.Model.Mentor;
 
 
 
@@ -34,7 +34,7 @@ public class MentorDaoJdbcImpl implements MentorDao {
 
 	@Override
 	public List<Mentor> getAllMentors() {
-		String sql = "SELECT * FROM Mentor";
+		String sql = "SELECT * FROM mentor";
 		try (Connection connection = connectionFactory.getConnection();
 				Statement statement = connection.createStatement(); //
 				ResultSet result = statement.executeQuery(sql)) {
@@ -61,7 +61,7 @@ public class MentorDaoJdbcImpl implements MentorDao {
 		
 		@Override 
 		public int addMentor(Mentor mentor) {
-			String sql = "INSERT INTO Mentor (firstName, lastName,email,company,title,yearGraduated,description,available) VALUES (?,?,?,?,?,?,?,?)";
+			String sql = "INSERT INTO mentor (firstName, lastName,email,company,title,yearGraduated,description,available) VALUES (?,?,?,?,?,?,?,?)";
 			try (Connection connection = connectionFactory.getConnection();
 					PreparedStatement statement = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)) {
 
@@ -98,7 +98,7 @@ public class MentorDaoJdbcImpl implements MentorDao {
 
 		@Override
 		public Mentor getMentor(int id) throws NameNotFoundException {
-			String sql = "SELECT * FROM Mentor WHERE id = ?";
+			String sql = "SELECT * FROM mentor WHERE id = ?";
 			try (Connection connection = connectionFactory.getConnection();
 					PreparedStatement statement = connection.prepareStatement(sql)) {
 				statement.setInt(1, id);
@@ -128,7 +128,7 @@ public class MentorDaoJdbcImpl implements MentorDao {
 		
 		@Override
 		public void deleteMentor(int id) throws NameNotFoundException {
-			String sql = "DELETE FROM Mentor WHERE id = ?";
+			String sql = "DELETE FROM mentor WHERE id = ?";
 			try (Connection conn = connectionFactory.getConnection();
 					PreparedStatement statement = conn.prepareStatement(sql)) {
 				statement.setInt(1, id);
