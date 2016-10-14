@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <%--
 	On this page we have Information about us
@@ -9,43 +9,42 @@
  --%>
 <html>
 <head>
-	<%@ include file="parts/head.jsp" %>
+<%@ include file="parts/head.jsp"%>
 </head>
+<P>  Time ${serverTime}. </P>
 <body>
-<div class="nav">
-	<a href="<c:url value="/"/>">Home</a>
-	<a href="<c:url value="/about-us"/>">About Us</a>
-</div>
+	<div class="nav">
+		<a href="<c:url value="/"/>">Home</a>
+		<a	href="<c:url value="/about-us"/>">About Us</a>
+	</div>
 
-<h1>
-	Welcome
-</h1>
+<img src="resources/Images/ExperienceITAlumniLOGO.png">
+	<h1>Welcome</h1>
 
-Experience IT Alumni has come a long way from its beginnings as an ideal for a final project. 
-When the four (then,Experience IT students) first started out, 
-their goal (providing an additional communication hub for recent acceptees, 
-and current Experience IT students), drove them to do more with their project;
-and decided to turn hard work and inspiration, into to an on-going way to keep students motivated, inspired,
-and connected with those who can relate to someone in their seat. 
-We are thrilled to have this ideal become more than a project, 
-and hope that it becomes another great asset in the Experience IT and Grand Circus community.
-<p>
-We hope  that you utilize the services as much as we enjoy offering them to you. 
-If you have any questions or comments ,please don't hasitae to contack us 
-Thank you
-</p>
-</div>
-
-<p>
-	GRAND CIRCUS DETROIT
-1570 Woodward Avenue, Level 3
-Detroit, MI 48226
-(313) 338-2780
-hello@grandcircus.co
-</p>
-<p>
-Sincerely,
-Revathy, Sadia, Mumeen, and Brent [Creator/Founders]
-</p>
-<footer>Copyright ©Experience IT Alumni</footer>
-
+	Experience IT Alumni has come a long way from its beginnings as an
+	ideal for a final project. When the four (then,Experience IT students)
+	first started out, their goal (providing an additional communication
+	hub for recent acceptees, and current Experience IT students), drove
+	them to do more with their project; and decided to turn hard work and
+	inspiration, into to an on-going way to keep students motivated,
+	inspired, and connected with those who can relate to someone in their
+	seat. We are thrilled to have this ideal become more than a project,
+	and hope that it becomes another great asset in the Experience IT and
+	Grand Circus community.
+	<p>We hope that you utilize the services as much as we enjoy
+		offering them to you. If you have any questions or comments ,please
+		don't hasitae to contack us Thank you</p>
+	</div>
+	 <p >To learn about the Grand Circus   please click the link below</p>
+   <a href = " http://www.grandcircus.co/blog/   ">Click Here
+   </a>
+   <div>
+   copyright &copy; 2016 Experience IT Alumni
+   </div>
+   
+   <h3>GRAND CIRCUS DETROIT</h3>
+       <p> 1570 Woodward Avenue, Level 3 Detroit, MI
+		48226 (313) 338-2780     hello@grandcircus.co</p>
+	<p>Sincerely, Revathy, Sadia, Mumeen, and Brent 
+	</p>
+	<footer>Copyright ©Experience IT Alumni</footer>
