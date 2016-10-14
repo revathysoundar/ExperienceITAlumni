@@ -1,5 +1,7 @@
 package co.grandcircus.expITAlumni.controller;
 
+import javax.servlet.http.HttpSession;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -17,13 +19,10 @@ public class loginController {
 	 * Display Login Page
 	 */
 	
-	@RequestMapping(value = "/login", method = RequestMethod.GET)
-	public String loginForm(Model model) {
-		model.addAttribute("login", new Login());
-		
-		logger.info("GET /login -> login.jsp");
-		return "login";
-	}
+	@RequestMapping("/logout")
+	public String logOut(HttpSession session) {
+		session.invalidate();
+		return "redirect:/home";
 	
-
-}
+	}
+	}

@@ -7,11 +7,13 @@
 
 <title>Resources</title>
 </head>
+
 <div>
 	<a href="<c:url value="/"/>">Home</a>
 
 </div>
 <h2>Resources</h2>
+
 <h3>ExperienceITAlumni</h3>
 <body>
 	Hi and Welcome
@@ -90,7 +92,9 @@ contribute to our code to add features, fix bugs, playtest, and even translate t
 	
 	
 
+
 	<p>To learn about Grand Circus please click the link below</p>
+
 
 	<a href=" http://www.grandcircus.co/blog/   ">Grand Circus</a>
 <img src="resources/Images/ExperienceITAlumniLOGO.png">

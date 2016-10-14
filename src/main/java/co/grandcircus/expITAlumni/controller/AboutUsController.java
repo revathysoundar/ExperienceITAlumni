@@ -13,13 +13,10 @@ public class AboutUsController {
 	private static final Logger logger = LoggerFactory.getLogger(AboutUsController.class);
 	
 	
-	@RequestMapping("/about-us")
+	@RequestMapping("/index")
 	public String  home (Model model ){
 		
-		//model.addAttribute("about-us")();
-		
-		
-		return "about-us";
+		return "index";
 	}
 	
 

@@ -26,11 +26,12 @@ public class SlackController {
 	@RequestMapping(value = "/slack", method = RequestMethod.GET)
 	public String getAuthorization(@RequestParam(value="code")String code,Model model) {
 		
-		Login login = new Login();
+		
 		model.addAttribute("login",slackService.getAccessTokenAt(code));
-		//model.addAttribute("login",login );
 		return "index";
 }
+	
+	
 	
 
 }
