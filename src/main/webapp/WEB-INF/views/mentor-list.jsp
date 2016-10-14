@@ -36,7 +36,7 @@
 </div>
 
 
-
+<img src="resources/Images/ExperienceITAlumniLOGO.png">
 
 
 </body>

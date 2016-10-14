@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import co.grandcircus.expITAlumni.Model.Login;
 import co.grandcircus.expITAlumni.controller.SlackController;
+import co.grandcircus.expITAlumni.model.Login;
 import co.grandcircus.expITAlumni.rest.SlackService;
 
 @Controller

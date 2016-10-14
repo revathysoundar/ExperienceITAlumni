@@ -9,7 +9,7 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
-import co.grandcircus.expITAlumni.Model.Login;
+import co.grandcircus.expITAlumni.model.Login;
 import co.grandcircus.expITAlumni.rest.HttpHelper;
 
 
