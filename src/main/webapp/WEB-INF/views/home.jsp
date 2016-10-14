@@ -18,5 +18,6 @@
 <a href="<c:url value="/faqs"/>">FAQs</a>
 <a href="<c:url value="/resourses"/>">Resources</a>
 <a href="<c:url value="/forum"/>">Forum</a>
+<a href="<c:url value="/questions"/>">Questions</a>
 </body>
 </html>

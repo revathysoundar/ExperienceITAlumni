@@ -1,10 +1,10 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page session="false" %>
 <%--
-	On this page we list all the mentors.
+	On this page we list all the questions.
 	
 	Model:
-	- List<Mentor> mentors
+	- List<Question> questions
  --%>
 <html>
 <head>
@@ -24,15 +24,15 @@
 	<tr>
 		<th>Questions</th>  
 	</tr>
-	<c:forEach var="mentor" items="${mentors}" >
+	<c:forEach var="question" items="${questions}" >
 		<tr>
-			<td><a href="<c:url value="/mentors/${mentor.id}"/>"><c:out value="${ mentor.firstName }"/><c:out value="${ mentor.lastName }"/><c:out value="${ mentor.email  }"/></a></td>
+			<td><a href="<c:url value="/questions/${question.id}"/>"><c:out value="${ question.question}"/></a></td>
 			
 		</tr>
 	</c:forEach>
 </table>
 <div class="action-bar">
-	<a class="add-btn" href="<c:url value="/mentors/create"/>">Add a mentor</a>
+	<a class="add-btn" href="<c:url value="/questions/create"/>">Add a question</a>
 </div>
 
 

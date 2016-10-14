@@ -25,7 +25,7 @@ public class QuestionController {
 	private QuestionDao questionDao;
 	
 	@RequestMapping("/questions")
-	public String listMentors(Model model) {
+	public String listQuestions(Model model) {
 		List<Question> questionList;
 		
 		questionList = questionDao.getAllQuestions();
@@ -33,11 +33,11 @@ public class QuestionController {
 		model.addAttribute("questions", questionList);
 		
 
-		logger.info("/mentors -> question-list.jsp");
-		return "question-list";
+		logger.info("/mentors -> question.jsp");
+		return "question";
 	}
 	
-	@RequestMapping(value = "/questions/create", method = RequestMethod.POST)
+/*	@RequestMapping(value = "/questions/create", method = RequestMethod.POST)
 	public String createMentor(Question question, Model model) {
 		questionDao.addQuestion(question);
 		model.asMap().clear();
@@ -47,14 +47,14 @@ public class QuestionController {
 	}
 	
 	
-	@RequestMapping(value = "/mentors/create", method = RequestMethod.GET)
+	@RequestMapping(value = "/questions/create", method = RequestMethod.GET)
 	public String createMentorForm(Model model) {
 		model.addAttribute("Question",new Question(0,null));
 		
 		logger.info("GET /mentors/create -> question-create.jsp");
 		return "question-create";
 	}
-	
+	*/
 	
 	
 }
