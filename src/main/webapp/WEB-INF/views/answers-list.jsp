@@ -1,12 +1,44 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ page session="false" %>
+<%--
+	On this page we list all the questions.
+	
+	Model:
+	- List<Question> questions
+ --%>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+	<%@ include file="parts/head.jsp" %>
 </head>
 <body>
+<div class="nav">
+	<a href="<c:url value="/"/>">Home</a>
+</div>
+<h1>
+	answers  List
+</h1>
+
+
+
+<table>
+	<tr>
+		<th>Answers</th>  
+	</tr>
+	<c:forEach var="answers" items="${answers}" >
+		<tr>
+			<td><a href="<c:url value="/answers/${answers.id}"/>"><c:out value="${ answers.answers}"/></a></td>
+			
+		</tr>
+	</c:forEach>
+</table>
+<div class="action-bar">
+	<a class="add-btn" href="<c:url value="/answers/create"/>">Add a answer</a>
+</div>
+
+
+<img src="resources/Images/ExperienceITAlumniLOGO.png">
+
 
 </body>
 </html>
+s
