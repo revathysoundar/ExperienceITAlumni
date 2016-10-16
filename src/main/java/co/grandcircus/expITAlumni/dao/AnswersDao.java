@@ -1,5 +1,6 @@
 package co.grandcircus.expITAlumni.dao;
 
+<<<<<<< HEAD
 import java.util.List;
 
 import javax.naming.NameNotFoundException;
@@ -52,4 +53,9 @@ public interface AnswersDao {
 
 
 	
+=======
+public interface AnswersDao {
+	
+
+>>>>>>> 6a4c9e332e8672e7d1f7104fafaf7526d1cd99f1
 }
