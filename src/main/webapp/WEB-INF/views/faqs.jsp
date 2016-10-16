@@ -88,13 +88,16 @@
 						<div class="panel-heading">
 							<h4 class="panel-title">
 								<a href="#section1" data-toggle="collapse" data-parent="#accordion">
-								How will I execute the practicals
+								When was ExperienceIT established?
 								</a>
 							</h4>
 						</div>
 						<div class="panel-collapse collapse" id="section1">
 							<div class="panel-body">
-								We will help you to setup edureka's virtual machine in your system with local access
+								ExperienceIT was established in April 2012, under the name IT in the D.<br />
+								 In April of 2014, the program underwent renovations, and the team felt it was only<br />
+								  appropriate to rename the program to align with its mission of providing its students<br />
+								   with an intensive experiential IT training experience.
 							</div>
 						</div>
 					</div>
@@ -106,15 +109,14 @@
 					<div class="panel-heading">
 						<h4 class="panel-title">
 							<a href="#section2" data-toggle="collapse" data-parent="#accordion">
-							What if I miss a class
+							When was ExperienceITAlumni created?
 							</a>
 						</h4>
 					</div>
 					<div class="panel-collapse collapse" id="section2">
 						<div class="panel-body">
-							 You will never lose any lecture. You can choose either of the two options:
-     						 1. View the recorded session of the class available in your LMS.
-      						2. You can attend the missed session, in any other live batch.Please note, access to the course material will be available for lifetime once you have enrolled into the course.
+							 In October of 2016 by Mumeen Shaheed, Revathy Raja, Sadia Noreen,<br />
+							 and Brent CollinsIII who were at that time students of the Experience It program.
       					</div>
       				</div>
       			</div>
@@ -124,23 +126,26 @@
       				<div class="panel-heading">
       					<h4 class="panel-title">
       						<a href="#section3" data-toggle="collapse" data-parent="#accordion">
-      						Who are the instructors
+      						Why was Experience ITAlumni created?
       						</a>
       					</h4>
       				</div>
-
+                         
       				<div class="panel-collapse collapse" id="section3">
       					<div class="panel-body">
-      						All our instructors are working professionals from the Industry and have at least 10-12 yrs of relevant experience in various domains. They are subject matter experts and are trained by Edureka for providing online training so that participants get a great learning experience.
+      						To help students that become enrolled in the Experience IT program connect with Alumni<br />
+      						about concerns faced by students with a question and answer forum.Students can also find <br />
+      						resources and request a mentor and alumni can become a mentor to help students achieve the goals<br />
+      						they are reaching for.
       					</div>
       				</div>
       			</div>
 
-      			<div class="panel panel-primary">
+      		<!--	<div class="panel panel-primary">
       				<div class="panel-heading">
       					<h4 class="panel-title">
       						<a href="#section4" data-toggle="collapse" data-parent="#accordion">
-      						Do you provide placement assistance ?
+      						
       						</a>
       					</h4>
       				</div>
@@ -169,9 +174,9 @@
       			</div>
       		
       		</div>
-      	</div>
+      	</div> -->
 
-    <!--  Footer Starts -->
+    <!-- Footer Starts -->
     <div class="container">
       <div class="row">
         <p align="center" style="padding:30px;">Copyright &copy; 2016 ExperienceIT Alumni. All rights reserved. 
@@ -180,7 +185,7 @@
        </div>
     </div>
     
-    <!-- Footer Ends  -->
+   <!--    Footer Ends  -->
 	<div class="container">
 		<div class="row">
 			<p align="center">
