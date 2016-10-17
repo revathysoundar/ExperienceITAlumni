@@ -12,8 +12,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Repository;
 
-import co.grandcircus.expITAlumni.model.Mentor;
+
 import co.grandcircus.expITAlumni.model.Question;
+import co.grandcircus.expITAlumni.exception.NotFoundException;
+
 
 
 @Repository
@@ -36,11 +38,7 @@ public class QuestionDaoJdbcImpl  implements QuestionDao {
 			while (result.next()) {
 				Integer id = result.getInt("qId");
 				String question = result.getString("question");
-				questionList.add(new Question(id, question));// adding
-																		// users
-																		// inlist
-																		// of
-																		// users
+				questionList.add(new Question(id, question));
 			}
 
 			return questionList;
@@ -50,32 +48,57 @@ public class QuestionDaoJdbcImpl  implements QuestionDao {
 	}
 
 	@Override
-	public int addQuestion(Question question) {
+	public int addQuestion(String question) {
+		
+		Question questions = new Question();
+		questions.setQuestion(question);
 		String sql = "INSERT INTO questions (question) VALUES (?)";
 		try (Connection connection = connectionFactory.getConnection();
 				PreparedStatement statement = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)) {
 
-			statement.setString(1, question.getQuestion());
-			
+			statement.setString(1, questions.getQuestion());
+			System.out.println(questions.getQuestion());
 
 			int affectedRows = statement.executeUpdate();
+			System.out.println(questions.getQuestion());
 			if (affectedRows == 0) {
-				throw new SQLException("Creating user failed, no rows affected.");
+				throw new SQLException("Creating questions failed, no rows affected.");
 			}
 
 			try (ResultSet generatedKeys = statement.getGeneratedKeys()) {
 				if (generatedKeys.next()) {
-					question.setqId(generatedKeys.getInt(1));
+					questions.setqId(generatedKeys.getInt(1));
 				} else {
-					throw new SQLException("Creating movie failed, no ID obtained.");
+					throw new SQLException("Creating question failed, no ID obtained.");
 				}
 			}
 
-			return question.getqId();
+			return questions.getqId();
 		} catch (SQLException ex) {
 			throw new RuntimeException(ex);
 		}
 
+	}
+	
+	@Override
+	public Question getQuestion(int id) throws NotFoundException {
+		String sql = "SELECT * FROM questions WHERE qid = ?";
+		try (Connection connection = connectionFactory.getConnection();
+				PreparedStatement statement = connection.prepareStatement(sql)) {
+			statement.setInt(1, id);
+			ResultSet result = statement.executeQuery();
+
+			if (result.next()) {
+				String question = result.getString("question");
+				
+
+				return new Question(id, question);
+			} else {
+				throw new NotFoundException("No such question.");
+			}
+		} catch (SQLException ex) {
+			throw new RuntimeException(ex);
+		}
 	}
 	
 	

@@ -12,15 +12,58 @@
 	<%@ include file="parts/head.jsp" %>
 </head>
 <body>
-<div class="nav">
-	<a href="<c:url value="/"/>">Home</a>
-	<a href="<c:url value="/mentors"/>">Back to Mentors List</a>
-	<a href="<c:url value="/about-us"/>">Back </a>
-</div>
-<h1>
-	Mentor: ${ mentor.firstName } ${ mentor.lastName }
-</h1>
 
+<!--Navigation bar-->
+	<section id="Navlist">
+	 
+		<nav class="navbar navbar-default no-margin nav-first" role="navigation">
+			<div class="navbar-header">
+			    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			      <span class="sr-only">Toggle navigation</span>
+			      <span class="icon-bar"></span>
+			      <span class="icon-bar"></span>
+			      <span class="icon-bar"></span>
+			    </button>
+    			<a class="navbar-logo" href="#"><img class="logo" src="resources/Images/logo.png"></a>
+  			</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    				<ul class="nav navbar-nav">
+    					<li class="menu"><a href="<c:url value="#"/>">About Us</a></li>
+						<li class="menu"><a href="<c:url value="/mentors"/>">Mentors</a></li>
+						<li class="menu"><a href="<c:url value="/questions"/>">Forum</a>
+						<li class="menu"><a href="<c:url value="/resourses"/>">Resources</a></li>
+						<li class="menu"><a href="<c:url value="/faqs"/>">FAQs</a></li>
+						
+					</ul>
+				</div><!-- /.navbar-collapse -->
+		</nav>
+		
+		 
+		<nav class="navbar navbar-default navbar-lower no-margin nav-second" role="navigation">
+			<div class="navbar-header">
+			    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+			      <span class="sr-only">Toggle navigation</span>
+			      <span class="icon-bar"></span>
+			      <span class="icon-bar"></span>
+			      <span class="icon-bar"></span>
+			    </button>
+   				 <a class="navbar-brand" href="#"></a>
+ 			 </div>
+					
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+    			<ul class="nav navbar-nav">
+						<li class="menu">Hello</li>
+						<li class="menu"><c:out value="${currentLogin.name }" /></li>
+						<li class="menu"><img src="${currentLogin.image }" class="img-circle" alt="${ login.name }" width="125" height="125"/></li>
+						
+				</ul>	
+				</div>
+		
+</nav>
+
+	</section>
+
+<div class="container">
 <form method="post">
 	<div>
 		<label>First Name</label>
@@ -62,6 +105,17 @@
 <form method="post" action="<c:url value="/mentors/${mentor.id}/delete"/>">
 	<button type="submit">Delete this Mentor</button>
 </form>
-
+</div>
+<!--  Footer Starts -->
+    <div class="container">
+      <div class="row">
+        <p align="center" style="padding:30px;">Copyright &copy; 2016 ExperienceIT Alumni. All rights reserved. 
+	     
+	    </p>
+       </div>
+    </div>
+    
+    <!-- Footer Ends  -->
+    
 </body>
 </html>

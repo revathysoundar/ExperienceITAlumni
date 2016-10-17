@@ -1,77 +1,22 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ page session="false" %>
-<!DOCTYPE html>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
 <html>
 <head>
 	<title>FAQs</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="resources/bootstrap/css/bootstrap.min.css">
-	<!--<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-	<script src="resources/bootstrap/js/bootstrap.min.js"></script>
+	<%@ include file="parts/head.jsp" %>
 	
 </head>
 <body>
-
-	
-
-	<!-- Page Content-->
-	<br><br><br>
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<%@ include file="parts/head.jsp"%>
-<div>
-	<a href="<c:url value="/"/>">Home</a>
-
-</div>
-<head>
-<title>FAQs</title>
-
-
-</head>
-<body>
-
-	<!-- Navigation bar-->
-	<div class="nav navbar-default navbar-fixed-top">
-		<div class="container">
-			<div class="navbar-header">
-				<!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">-->
-				<span class="icon-bar"></span> <span class="icon-bar"></span> <span
-					class="icon-bar"></span>
-				</button>
-
-
-			</div>
-			<div class="navbar-collapse collapse">
-				<ul class="nav navbar-nav">
-                    <li><a href="<c:url value="/"/>">Home</a></li>
-					<li><a href="story.html">Mentors</a></li>
-					<li><a href="course.html">About Us</a></li>
-					<li><a href="signup.html">Sign Up</a></li>
-					<li><a href="faq.html">Resourses</a></li>
-					<li><a href="contact.html">Contact Us</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-
-	<!-- Page Content-->
+	<%@ include file="parts/login-bar.jsp" %>
 	
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
 
 				<h2>FAQs</h2>
-
 				<p><h3>Wanted to learn with us, still have some queries</h3></p>
-
-				<p>
-				<h3>Come learn with us, still have some queries</h3>
-				</p>
-
 			</div>
 		</div>
 	</div>
@@ -79,7 +24,6 @@
 	<!--Accordion-->
 
 	<div class="container">
-
 		
 
 		<div class="panel-group" id="accordion">
@@ -171,6 +115,7 @@
       		</div>
       	</div>
 
+
     <!--  Footer Starts -->
     <div class="container">
       <div class="row">
@@ -180,15 +125,6 @@
        </div>
     </div>
     
-    <!-- Footer Ends  -->
-	<div class="container">
-		<div class="row">
-			<p align="center">
-				Copyright &copy; ExperienceIt Alumni. All rights reserved. 
-			</p>
-		</div>
-	</div>
-
-	
+    	
 </body>
 </html>

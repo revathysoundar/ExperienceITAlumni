@@ -5,19 +5,14 @@
 <head>
 <%@ include file="parts/head.jsp"%>
 
-<title>Resources</title>
 </head>
 
-<div>
-	<a href="<c:url value="/"/>">Home</a>
 
-</div>
-<h2>Resources</h2>
 
-<h3>ExperienceITAlumni</h3>
 <body>
-	Hi and Welcome
-
+	
+<%@ include file="parts/login-bar.jsp"%>
+<div class="container">
 	<p>Apps are everywhere, and learning to build them can be a
 		fantastic career move. No programming experience? No problem! The
 		skills you learn in this program will accelerate your journey to
@@ -96,7 +91,18 @@ contribute to our code to add features, fix bugs, playtest, and even translate t
 	<p>To learn about Grand Circus please click the link below</p>
 
 
-	<a href=" http://www.grandcircus.co/blog/   ">Grand Circus</a>
-<img src="resources/Images/ExperienceITAlumniLOGO.png">
+	<a href=" http://www.grandcircus.co">Grand Circus</a>
+</div>
+<!--  Footer Starts -->
+    <div class="container">
+      <div class="row">
+        <p align="center" style="padding:30px;">Copyright &copy; 2016 ExperienceIT Alumni. All rights reserved. 
+	     
+	    </p>
+       </div>
+    </div>
+    
+    <!-- Footer Ends  -->
+    
 </body>
 </html>

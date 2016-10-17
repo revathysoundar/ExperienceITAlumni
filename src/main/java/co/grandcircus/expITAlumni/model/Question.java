@@ -5,7 +5,10 @@ public class Question {
 	private Integer qId;
 	private String question;
 	
-	
+	public Question()
+	{
+		
+	}
 	
 	public Question(Integer qId, String question) {
 		super();

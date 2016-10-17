@@ -11,14 +11,11 @@
 <head>
 <%@ include file="parts/head.jsp"%>
 </head>
-<P>  Time ${serverTime}. </P>
-<body>
-	<div class="nav">
-		<a href="<c:url value="/"/>">Home</a>
-		<a	href="<c:url value="/about-us"/>">About Us</a>
-	</div>
 
-<img src="resources/Images/ExperienceITAlumniLOGO.png">
+<body>
+	
+
+<%@ include file="parts/login-bar.jsp" %>
 	<h1>Welcome</h1>
 
 	Experience IT Alumni has come a long way from its beginnings as an
@@ -36,15 +33,23 @@
 		don't hasitae to contack us Thank you</p>
 	</div>
 	 <p >To learn about the Grand Circus   please click the link below</p>
-   <a href = " http://www.grandcircus.co/blog/   ">Click Here
+   <a href = " http://www.grandcircus.co">Click Here
    </a>
-   <div>
-   copyright &copy; 2016 Experience IT Alumni
-   </div>
+   
    
    <h3>GRAND CIRCUS DETROIT</h3>
        <p> 1570 Woodward Avenue, Level 3 Detroit, MI
 		48226 (313) 338-2780     hello@grandcircus.co</p>
 	<p>Sincerely, Revathy, Sadia, Mumeen, and Brent 
 	</p>
-	<footer>Copyright ©Experience IT Alumni</footer>
+	<!--  Footer Starts -->
+    <div class="container">
+      <div class="row">
+        <p align="center" style="padding:30px;">Copyright &copy; 2016 ExperienceIT Alumni. All rights reserved. 
+	     
+	    </p>
+       </div>
+    </div>
+    
+    <!-- Footer Ends  -->
+    
