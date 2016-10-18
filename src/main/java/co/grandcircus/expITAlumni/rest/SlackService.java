@@ -3,6 +3,7 @@ package co.grandcircus.expITAlumni.rest;
 import java.io.BufferedReader;
 import java.io.IOException;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import com.google.gson.JsonElement;
@@ -19,8 +20,11 @@ import co.grandcircus.expITAlumni.rest.HttpHelper;
 @Service
 public class SlackService {
 	
-	private final static String CLIENT_ID = "4975543103.90426640038";
-	private final static String CLIENT_SECRET = "f790190de4b570306d5e2cf8ec09c270";
+	@Value("${CLIENT_ID}")
+	private  String CLIENT_ID;
+	
+	@Value("${CLIENT_SECRET}")
+	private  String CLIENT_SECRET;
 		
 		public Login getAccessTokenAt(String code) {
 			String url = "https://slack.com/api/oauth.access?client_id=" +CLIENT_ID+ "&client_secret="+CLIENT_SECRET+"&code="+code+"&FcstType=json";

@@ -13,91 +13,62 @@
 </head>
 <body>
 
-<!--Navigation bar-->
-	<section id="Navlist">
-	 
-		<nav class="navbar navbar-default no-margin nav-first" role="navigation">
-			<div class="navbar-header">
-			    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-			      <span class="sr-only">Toggle navigation</span>
-			      <span class="icon-bar"></span>
-			      <span class="icon-bar"></span>
-			      <span class="icon-bar"></span>
-			    </button>
-    			<a class="navbar-logo" href="#"><img class="logo" src="resources/Images/logo.png"></a>
-  			</div>
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-    				<ul class="nav navbar-nav">
-    					<li class="menu"><a href="<c:url value="#"/>">About Us</a></li>
-						<li class="menu"><a href="<c:url value="/mentors"/>">Mentors</a></li>
-						<li class="menu"><a href="<c:url value="/questions"/>">Forum</a>
-						<li class="menu"><a href="<c:url value="/resourses"/>">Resources</a></li>
-						<li class="menu"><a href="<c:url value="/faqs"/>">FAQs</a></li>
-						
-					</ul>
-				</div><!-- /.navbar-collapse -->
-		</nav>
-		
-		 
-		<nav class="navbar navbar-default navbar-lower no-margin nav-second" role="navigation">
-			<div class="navbar-header">
-			    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
-			      <span class="sr-only">Toggle navigation</span>
-			      <span class="icon-bar"></span>
-			      <span class="icon-bar"></span>
-			      <span class="icon-bar"></span>
-			    </button>
-   				 <a class="navbar-brand" href="#"></a>
- 			 </div>
-					
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
-    			<ul class="nav navbar-nav">
-						<li class="menu">Hello</li>
-						<li class="menu"><c:out value="${currentLogin.name }" /></li>
-						<li class="menu"><img src="${currentLogin.image }" class="img-circle" alt="${ login.name }" width="125" height="125"/></li>
-						
-				</ul>	
-				</div>
-		
-</nav>
-
-	</section>
+	<%@ include file="parts/login-bar.jsp" %>
 
 <div class="container">
-<form method="post">
-	<div>
-		<label>First Name</label>
-		<input type="text" name="firstName" value="${mentor.firstName}"/>
-	</div>
-	<div>
-		<label>Last Name</label>
-		<input type="text" name="lastName" value="${mentor.lastName}"/>
-	</div>
-	<div>
-		<label>Email</label>
-		<input type="text" name="email" value="${mentor.email}"/>
-	</div>
-	<div>
-		<label>Company Name</label>
-		<input type="text" name="firstName" value="${mentor.company}"/>
-	</div>
-	<div>
-		<label>Title</label>
-		<input type="text" name="lastName" value="${mentor.title}"/>
-	</div>
-	<div>
-		<label>Year Graduated</label>
-		<input type="text" name="email" value="${mentor.yearGraduated}"/>
-	</div>
-	<div>
-		<label>Description</label>
-		<input type="text" name="firstName" value="${mentor.description}"/>
-	</div>
-	<div>
-		<label>Available</label>
-		<input type="text" name="lastName" value="${mentor.available}"/>
-	</div>
-	
+<form class="form-horizontal" method="post">
+
+  <div class="form-group">
+      <label class="control-label col-sm-2" for="fname">FirstName:</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" name="firstName" value="${mentor.firstName}">
+      </div>
+   </div>
+   <div class="form-group">
+      <label class="control-label col-sm-2" for="lname">LastName:</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" name="lastName" value="${mentor.lastName}">
+      </div>
+   </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="email">Email:</label>
+      <div class="col-sm-4">
+        <input type="email" class="form-control" name="email" value="${mentor.email}">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="cname">CompanyName:</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" name="company" value="${mentor.company}">
+      </div>
+   </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="title">Job Title:</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" name="title" value="${mentor.title}">
+      </div>
+   </div>
+   <div class="form-group">
+      <label class="control-label col-sm-2" for="year">Year Graduated:</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" name="year graduated" value="${mentor.yearGraduated}">
+      </div>
+   </div>
+   <div class="form-group">
+      <label class="control-label col-sm-2" for="desc">Description:</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" name="description" value="${mentor.description}">
+      </div>
+   </div>
+   <div class="form-group"> 
+   
+    <div class="col-sm-offset-2 col-sm-10">
+      <div class="checkbox">
+        <label><input type="checkbox" value="${mentor.available}" <c:if test="${mentor.available}">checked</c:if>/>I'm Available</label>
+      </div>
+    </div>
+  </div>
+
 	
 	<button type="submit">Save Changes</button>
 </form>

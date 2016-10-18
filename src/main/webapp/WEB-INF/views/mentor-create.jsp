@@ -19,54 +19,77 @@
 Mentoring is a process for the informal transmission of knowledge, social capital, and the psychosocial support 
 perceived by the recipient as relevant to work, career, or professional development;
 If you have any questions in mind  regarding the the program our experienced and knowledgeable
-mentors are here to  help to guide you throughout the course to give you better understanding and knowledge 
+mentors are here to  help to guide you throughout the course to give you better understanding and knowledge. 
 They  have been through all what you are going through. It is a learning and development partnership between your mentor  with vast 
 experience and 
-someone who wants to learn, you. Mentorship experience and relationship will be helpful to achieve your goal . So ask any questions you have in mind
+someone who wants to learn, you. Mentorship experience and relationship will be helpful to achieve your goal . So ask any questions you have in mind.
 
 
 </p>
 <h1>
-	Add a mentor
+	Become a mentor
 </h1>
+<div>
+<form class="form-horizontal" method="post">
 
-<form method="post">
-	<div>
-		<label>First Name</label>
-		<input type="text" name="firstName" value="${mentor.firstName}"/>
-	</div>
-	<div>
-		<label>Last Name</label>
-		<input type="text" name="lastName" value="${mentor.lastName}"/>
-	</div>
-	<div>
-		<label>Email</label>
-		<input type="text" name="email" value="${mentor.email}"/>
-	</div>
-	
-		<label>Company Name</label>
-		<input type="text" name="company" value="${mentor.company}"/>
-	</div>
-	<div>
-		<label>Title</label>
-		<input type="text" name="title" value="${mentor.title}"/>
-	</div>
-	<div>
-		<label>Year Graduated</label>
-		<input type="text" name="year graduated" value="${mentor.yearGraduated}"/>
-	</div>
-	<div>
-		<label>Description</label>
-		<input type="text" name="description" value="${mentor.description}"/>
-	</div>
-	<div>
-		<label>Available</label>
-		<input type="text" name="available" value="${mentor.available}"/>
-	</div>
-	
-	
-	<button type="submit">Create</button>
-</form>
+  <div class="form-group">
+      <label class="control-label col-sm-2" for="fname">FirstName:</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" name="firstName" value="${mentor.firstName}">
+      </div>
+   </div>
+   <div class="form-group">
+      <label class="control-label col-sm-2" for="lname">LastName:</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" name="lastName" value="${mentor.lastName}">
+      </div>
+   </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="email">Email:</label>
+      <div class="col-sm-4">
+        <input type="email" class="form-control" name="email" value="${mentor.email}">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="cname">CompanyName:</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" name="company" value="${mentor.company}">
+      </div>
+   </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="title">Job Title:</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" name="title" value="${mentor.title}">
+      </div>
+   </div>
+   <div class="form-group">
+      <label class="control-label col-sm-2" for="year">Year Graduated:</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" name="year graduated" value="${mentor.yearGraduated}">
+      </div>
+   </div>
+   <div class="form-group">
+      <label class="control-label col-sm-2" for="desc">Description:</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" name="description" value="${mentor.description}">
+      </div>
+   </div>
+   <div class="form-group"> 
+   
+    <div class="col-sm-offset-2 col-sm-10">
+      <div class="checkbox">
+        <label><input type="checkbox"> I'm Available</label>
+      </div>
+    </div>
+  </div>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-">
+        <button type="submit" class="btn btn-default">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>
+</div>
 <!--  Footer Starts -->
     <div class="container">
       <div class="row">

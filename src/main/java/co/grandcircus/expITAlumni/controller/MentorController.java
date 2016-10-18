@@ -74,9 +74,9 @@ public class MentorController {
 		 
 		@RequestMapping(value = "/mentors/{id}", method = RequestMethod.POST)
 		public String saveMentor(@PathVariable int id, Mentor mentor, Model model) {
-		//	mentorDao.updateMentor(id, mentor);
+			mentorDao.updateMentor(id, mentor);
 			model.addAttribute("id", id);
-			model.addAttribute("user", mentor);
+			model.addAttribute("mentor", mentor);
 			
 			logger.info("POST /mentors/" + id + " -> mentor.jsp");
 			return "mentor";

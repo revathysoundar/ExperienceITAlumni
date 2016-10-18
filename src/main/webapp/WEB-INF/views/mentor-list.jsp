@@ -29,26 +29,37 @@ someone who wants to learn, you. Mentorship experience and relationship will be 
 <h1>
 	 Mentors  List
 </h1>
-<table border="1">
-	<tr>
-		<th>FirstName</th><th>LastName<th>Email</th>  
-	</tr>
-	<c:forEach var="mentor" items="${mentors}" >
-		<tr>
-			<td><a href="<c:url value="/mentors/${mentor.id}"/>"><c:out value="${ mentor.firstName }"/></a></td>
+<div class="container">
+  <div class="table-responsive">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <c:forEach var="mentor" items="${mentors}" >
+    <tbody>
+      <tr>
+        <td><a href="<c:url value="/mentors/${mentor.id}"/>"><c:out value="${ mentor.firstName }"/></a></td>
 			
 			
-			<td><c:out value="${ mentor.lastName }"/></td>
+			<td><a href="<c:url value="/mentors/${mentor.id}"/>"><c:out value="${ mentor.lastName }"/></a></td>
 			
 			
-			<td><c:out value="${ mentor.email  }"/></td>
+			<td><a href="<c:url value="/mentors/${mentor.id}"/>"><c:out value="${ mentor.email  }"/></a></td>
 			
-			
-		</tr>
-	</c:forEach>
-</table>
+      </tr>
+      
+    </tbody>
+    </c:forEach>
+  </table>
+  </div>
+</div>
+
 <div class="action-bar">
-	<a class="add-btn" href="<c:url value="/mentors/create"/>">Add a mentor</a>
+	Want to ba a Mentor?<a class="add-btn" href="<c:url value="/mentors/create"/>">Become a Mentor</a>
 </div>
 
 

@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.naming.NameNotFoundException;
 
+import co.grandcircus.expITAlumni.exception.NotFoundException;
 import co.grandcircus.expITAlumni.model.Mentor;
 
 
@@ -40,7 +41,7 @@ public interface MentorDao {
 	 * @param user the new values for the user
 	 * @throws NotFoundException if the user does not exist
 	 */
-	//void updateMentor(int id, Mentor mentor) throws NameNotFoundException;
+	void updateMentor(int id, Mentor mentor) throws NotFoundException;
 	
 	/**
 	 * Delete the specified mentor

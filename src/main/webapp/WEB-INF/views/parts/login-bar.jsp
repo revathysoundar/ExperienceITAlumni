@@ -15,7 +15,7 @@
     			<a class="navbar-logo" href="#"><img class="logo" src="<c:url value="/resources/Images/logo.png"/>"></a>
   			</div>
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-    				<ul class="nav navbar-nav">
+    				<ul class="nav navbar-nav navbar-right">
     					<li class="menu"><a href="<c:url value="/index"/>">About Us</a></li>
 						<li class="menu"><a href="<c:url value="/mentors"/>">Mentors</a></li>
 						<li class="menu"><a href="<c:url value="/questions"/>">Forum</a>
@@ -39,7 +39,7 @@
  			 </div>
 					
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
-    			<ul class="nav navbar-nav">
+    			<ul class="nav navbar-nav navbar-right">
 						<li class="menu">Hello</li>
 						<li class="menu"><c:out value="${currentLogin.name }" /></li>
 						<li class="menu"><img src="${currentLogin.image }" class="img-circle" alt="${ login.name }" width="125" height="125"/></li>

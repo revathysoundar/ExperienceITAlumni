@@ -17,6 +17,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import co.grandcircus.expITAlumni.exception.NotFoundException;
 import co.grandcircus.expITAlumni.model.Mentor;
 
 
@@ -141,55 +142,38 @@ public class MentorDaoJdbcImpl implements MentorDao {
 				throw new RuntimeException(ex);
 			}
 		}
-}
 
-		
-		
-		
-		
-		/**
-		 * Display one mentor
-		 
-		@RequestMapping(value = "/mentors/create", method = RequestMethod.GET)
-		public String createMentorForm(Model model) {
-			model.addAttribute("mentor", new Mentor());
+		@Override
+		public void updateMentor(int id, Mentor mentor) throws NotFoundException {
 			
-			logger.info("GET /mentors/create ->mentor-create.jsp");
-			return "mentor-create";
+				String sql = "UPDATE mentor SET firstName = ?, lastName = ?,email = ?, company = ?,title = ?,"
+						+ "yearGraduate = ?,description = ?,available = ? WHERE id = ?";
+				try (Connection conn = connectionFactory.getConnection();
+						PreparedStatement statement = conn
+								.prepareStatement(sql)) {
+					statement.setString(1, mentor.getFirstName());
+					statement.setString(2, mentor.getLastName());
+					statement.setString(3, mentor.getEmail());
+					statement.setString(4, mentor.getCompany());
+					statement.setString(5, mentor.getTitle());
+					statement.setString(6, mentor.getYearGraduated());
+					statement.setString(7, mentor.getDescription());
+					statement.setBoolean(8, mentor.isAvailable());
+
+					int rowsUpdated = statement.executeUpdate();
+					if (rowsUpdated != 1) {
+						throw new NotFoundException("No such mentor");
+					}
+				} catch (SQLException ex) {
+					throw new RuntimeException(ex);
+				}
+			}
+
 		}
-		
-		/**
-		 * Save new mentor  or create new mentor
-		
-		@RequestMapping(value = "/mentors/create", method = RequestMethod.POST)
-		public String createMentor(Mentor mentor, Model model) {
-			mentorDao.addMentor(mentor);
-			model.asMap().clear();
-			
-			logger.info("POST /mentors/create -> redirect to /mentors");
-			return "redirect:/mentors";
-		}
-		
-		
-		
-		
-	}
-	/**
-	 * @Override public Mentor getMentor(int id) throws NameNotFoundException {
-	 *           // TODO Auto-generated method stub return null; }
-	 * 
-	 * @Override public int addMentor(Mentor mentor) { // TODO Auto-generated
-	 *           method stub return 0; }
-	 * 
-	 * @Override public void updateMentor(int id, Mentor mentor) throws
-	 *           NameNotFoundException { // TODO Auto-generated method stub
-	 * 
-	 *           }
-	 * 
-	 * @Override public void deleteMentor(int id) throws NameNotFoundException {
-	 *           // TODO Auto-generated method stub
-	 * 
-	 *           }
-	 */
 
 
+		
+		
+		
+		
+		

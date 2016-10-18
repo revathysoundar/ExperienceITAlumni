@@ -26,27 +26,32 @@ Please join the discussion! This forum covers Experience IT  community news,  an
 You are welcome to  benefit from it and post your comments and answers to the questions .
 
 </div>
-	<table border="1">
-	<tr>
-		<th>Question</th>
-	</tr>
-	<c:forEach var="question" items="${questions}">
-	<tr>
-	<td>
-	 <a href="<c:url value="/questions/${question.qId}"/>"><c:out value="${question.question}"/>
-		</a></td>
-	</tr>
-	
-	</c:forEach>
-	</table>
-	
+<div class="table-responsive">
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Questions</th>
+      </tr>
+    </thead>
+   <c:forEach var="question" items="${questions}">
+    <tbody>
+      <tr>
+        <td><a href="<c:url value="/questions/${question.qId}"/>"><c:out value="${question.question}"/></a></td>
+     </tr>
+      
+    </tbody>
+    </c:forEach>
+  </table>
+	</div>
 	<div>
 	<label>Ask a Question</label></div>
 	<div>
-	<textarea rows="10" cols="100" id="mytextarea" name="question"></textarea>
+	<textarea class="form-control" rows="5" id="mytextarea" name="question"></textarea>
+	
 	
 	</div>
 	<div class="action-bar">
+	
 	<button type="submit" onclick="myFunction()">Submit</button>
 </div>
 

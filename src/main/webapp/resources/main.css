@@ -1,10 +1,10 @@
 
 nav.nav-first{
-      	background-color: black;
+      	background-color: blue;
     	border-color: #E7E7E7;
         }
 nav.nav-second{
-      background-color: white;
+      background-color: grey;
     border-color: #E7E7E7;
       }
 nav.no-margin{
@@ -25,4 +25,14 @@ logo{
 	}
 	nav.navbar-collapse{
 	height:100px;
+	}
+	
+	.center-block{
+	
+  display: block;  
+  margin-right: auto;  
+  margin-left: auto;  
+}  
+	tr:hover{
+	background-color: blue;
 	}

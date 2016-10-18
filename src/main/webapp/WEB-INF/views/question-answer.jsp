@@ -19,38 +19,37 @@
 </head>
 <body>
 	<%@ include file="parts/login-bar.jsp" %>
-
+<div class="container">
 	<c:out value="${question.question}"/>
-	
-	
-<form method="post" action="<c:url value="/answers/add/"/>">
-	<table border=1>
-	<tr>
-		<th>Answers</th>
-	</tr>
-	<c:forEach var="answer" items="${answer}">
-	<tr>
-	
-	<td>
-	<c:out value="${answer.answer}"/>
-	</td>
-	
-	</tr>
-	
-	</c:forEach>
-	</table>
-	
+	<form method="post" action="<c:url value="/answers/add/"/>">
+	<div class="table-responsive">
+	<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Answers</th>
+      </tr>
+    </thead>
+   <c:forEach var="answer" items="${answer}">
+    <tbody>
+      <tr>
+        <td><c:out value="${answer.answer}"/></td>
+     </tr>
+      
+    </tbody>
+    </c:forEach>
+  </table>
+	</div>
 	<div>
 	<label>Want to Answer</label></div>
 	<div>
-	<textarea rows="10" cols="100" id="mytextarea" name="answer"></textarea>
+	<textarea class="form-control" rows="5" id="mytextarea" name="answer"></textarea>
 	<input type="hidden" name="qid" value="${question.qId}">
-	</div>
+	
 	<div class="action-bar">
 	<button type="submit" onclick="myFunction()">Submit</button>
 </div>
+</div>
 
-	
 	</form>
 	<!--  Footer Starts -->
     <div class="container">
