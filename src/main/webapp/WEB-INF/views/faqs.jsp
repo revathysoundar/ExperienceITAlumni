@@ -15,7 +15,7 @@
 		<div class="row">
 			<div class="col-md-12">
 
-				<h2>FAQs</h2>
+				<h2 style="color:#bdb76b;">FAQs</h2>
 			</div>	
 		</div>
 	
@@ -37,7 +37,7 @@
 						</div>
 						<div class="panel-collapse collapse" id="section1">
 							<div class="panel-body">
-								ExperienceIT is a training program, created  in an effort to  bridge the gap between what the schools are teaching at local colleges and universities, and current hiring needs.
+								ExperienceIT is a training program, created  in an effort to  bridge the gap between what the schools are teaching  and current hiring needs.
 								The main purpose of Experience IT is to give you the opportunity to enter in the field of technology.
 							</div>
 						</div>
@@ -74,7 +74,7 @@
 					<div class="panel-collapse collapse" id="section3">
 						<div class="panel-body">
 							
-							All ExperienceIT classes are held  in downtown Detroit, primarily at Granc Circus, located in Grand Circus Park.
+							 ExperienceIT classes are held  in downtown Detroit, primarily at Grand Circus, located in Grand Circus Park.
       					</div>
       				</div>
       			</div>
@@ -109,12 +109,13 @@
 					<div class="panel-collapse collapse" id="section5">
 						<div class="panel-body">
 							
-							Yes , there are multiple parking lots available near the building but they are not free. There are different rates for 
-							each lot. You can park for free at MGM Casino parking building. 
+							Yes , there are multiple parking lots available near the building but they are not free. There are available atdifferent rates 
+							 You can park for free at MGM Casino parking building. 
 
       					</div>
       				</div>
       			</div>
+      			
       			
       			<div class="panel panel-primary">
 					<div class="panel-heading">
@@ -127,26 +128,179 @@
 					<div class="panel-collapse collapse" id="section6">
 						<div class="panel-body">
 							
-							We understand that emergancies happens and sometimes you can't make it but you cannot be absent more than 3 days . 
+							We understand that emergancies happen and sometimes you can't make it but you cannot be absent for more than 3 days  without some notice . 
 							In case of absence please inform ahead of time if possible.
       					</div>
       				</div>
       			</div>
 
-      		</div>
-      		</div>
-    <!-- Footer Starts -->
+      		
+      		      
+                  <div class="panel panel-primary">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a href="#section7" data-toggle="collapse" data-parent="#accordion">
+									Who are the instructors?
+								</a>
+							</h4>
+							</div>
+						
+						<div class="panel-collapse collapse" id="section7">
+							<div class="panel-body">
+								All our instructors are working professionals from the Industry and have at least 10-12 yrs of relevant experience in 
+                                various domains. They are subject matter experts and are trained for providing  training so that
+                                participants get a great learning experience.
+							</div>
+						</div>
+					
+					</div>
+					
+				
 
-    <div class="container">
+					
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a href="#section8" data-toggle="collapse" data-parent="#accordion">
+							What if I miss a class?
+							</a>
+						</h4>
+					</div>
+					<div class="panel-collapse collapse" id="section8">
+						<div class="panel-body">
+							 You will never lose any lecture.Access to the course material will be 
+                              available  once you have enrolled into the course.
+      					</div>
+      				</div>
+      			</div>
+      		
+      			<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a href="#section9" data-toggle="collapse" data-parent="#accordion">
+							Who are the students?
+							</a>
+						</h4>
+					</div>
+					<div class="panel-collapse collapse" id="section9">
+						<div class="panel-body">
+							
+						ExperienceIT  students  range from young adults in college  to established
+						professionals looking to refine or expand their technical and/or application skills.
+      					</div>
+      				</div>
+      			</div>
+      			
+
+           		<div class="panel panel-primary">
+      				<div class="panel-heading">
+      					<h4 class="panel-title">
+      						<a href="#section10" data-toggle="collapse" data-parent="#accordion">
+      								Do you provide placement assistance ?
+      						</a>
+      					</h4>
+      				</div>
+                         
+      				<div class="panel-collapse collapse" id="section10">
+      					<div class="panel-body">
+      						 We help our certified students get connected to prospective 
+                             employers. We also help our students prepare their resumes, work on real life projects and provide assistance for
+                             interview preparation. Having said that, please understand that we don't guarantee any placements however if you go
+                             through the course diligently and complete the project you will have a very good hands on experience to work on a 
+                           live projects.
+
+      					</div>
+      				</div>
+      			</div>
+      			
+      			<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a href="#section11" data-toggle="collapse" data-parent="#accordion">
+							How will I execute the practicals ?
+							</a>
+						</h4>
+					</div>
+					<div class="panel-collapse collapse" id="section11">
+						<div class="panel-body">
+							
+							We will help you to setup the virtual machine in your system with local access and all necessary tools  for classwork 
+                            and practice
+
+      					</div>
+      				</div>
+      			</div>
+      			
+      			<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a href="#section12" data-toggle="collapse" data-parent="#accordion">
+						Can I get access to lectures  before attending a class ?
+							</a>
+						</h4>
+					</div>
+					<div class="panel-collapse collapse" id="section12">
+						<div class="panel-body">
+							
+							Yes, this can be done. Moreover, this ensures that when you will start with your batch, the concepts explained during
+                              the classes will not be totally new to you.
+      					</div>
+      				</div>
+      			</div>
+
+      		
+      		
+      		
+      		
+      		<div class="panel panel-primary">
+      				<div class="panel-heading">
+      					<h4 class="panel-title">
+      						<a href="#section13" data-toggle="collapse" data-parent="#accordion">
+      								Are there any fees?
+      						</a>
+      					</h4>
+      				</div>
+                         
+      				<div class="panel-collapse collapse" id="section13">
+      					<div class="panel-body">
+      						 No there are no fees . Just come in and try your best
+
+      					</div>
+      				</div>
+      			</div>
+      			
+      			<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a href="#section14" data-toggle="collapse" data-parent="#accordion">
+							
+                               Is there any course material available?
+							</a>
+						</h4>
+					</div>
+					<div class="panel-collapse collapse" id="section14">
+						<div class="panel-body">
+							
+							Yes . We will provide you with the books and online slideshows will also be available to review material.
+
+      					</div>
+      				</div>
+      			</div>
+      			</div>
+      			
+      			</div>
+      			
+      		
+      		
+      <!-- Footer Starts -->
+
+    <div class="footer">
       <div class="row">
-        <p align="center" style="padding:30px;">Copyright &copy; 2016 ExperienceIT Alumni. All rights reserved. 
+        Copyright &copy; 2016 ExperienceIT Alumni. All rights reserved. 
 	     
-	    </p>
+	   
        </div>
     </div>
     
 
-   <!--    Footer Ends  -->
-   
-	</body>
-</html>
+   <!--    Footer-->

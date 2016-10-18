@@ -16,6 +16,20 @@
 	<%@ include file="parts/login-bar.jsp" %>
 
 <div class="container">
+
+<p>
+Mentoring is a process for the informal transmission of knowledge, social capital, and the psychosocial support 
+perceived by the recipient as relevant to work, career, or professional development.<br><br>
+If you have any questions in mind  regarding the the program our experienced and knowledgeable
+mentors are here to  help to guide you throughout the course to give you better understanding and knowledge 
+They  have been through all what you are going through. It is a learning and development partnership between your mentor  with vast 
+experience and 
+someone who wants to learn, you.
+<br><br> Mentorship experience and relationship will be helpful to achieve your goal. 
+
+
+</p>
+
 <form class="form-horizontal" method="post">
 
   <div class="form-group">
@@ -70,19 +84,20 @@
   </div>
 
 	
-	<button type="submit">Save Changes</button>
+	<button type="submit" class="inline" id="button">Save Changes</button>
 </form>
 
 <form method="post" action="<c:url value="/mentors/${mentor.id}/delete"/>">
-	<button type="submit">Delete this Mentor</button>
+	<button type="submit" class="inline" id="button">Delete this Mentor</button>
 </form>
+
 </div>
 <!--  Footer Starts -->
-    <div class="container">
+    <div class="footer">
       <div class="row">
-        <p align="center" style="padding:30px;">Copyright &copy; 2016 ExperienceIT Alumni. All rights reserved. 
+       Copyright &copy; 2016 ExperienceIT Alumni. All rights reserved. 
 	     
-	    </p>
+	   
        </div>
     </div>
     

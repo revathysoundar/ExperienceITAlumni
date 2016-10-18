@@ -147,7 +147,7 @@ public class MentorDaoJdbcImpl implements MentorDao {
 		public void updateMentor(int id, Mentor mentor) throws NotFoundException {
 			
 				String sql = "UPDATE mentor SET firstName = ?, lastName = ?,email = ?, company = ?,title = ?,"
-						+ "yearGraduate = ?,description = ?,available = ? WHERE id = ?";
+						+ "yearGraduated = ?,description = ?,available = ? WHERE id = ?";
 				try (Connection conn = connectionFactory.getConnection();
 						PreparedStatement statement = conn
 								.prepareStatement(sql)) {
@@ -159,6 +159,7 @@ public class MentorDaoJdbcImpl implements MentorDao {
 					statement.setString(6, mentor.getYearGraduated());
 					statement.setString(7, mentor.getDescription());
 					statement.setBoolean(8, mentor.isAvailable());
+					statement.setInt(9, id);
 
 					int rowsUpdated = statement.executeUpdate();
 					if (rowsUpdated != 1) {

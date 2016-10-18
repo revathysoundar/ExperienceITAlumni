@@ -20,19 +20,19 @@
 <body>
 	<%@ include file="parts/login-bar.jsp" %>
 <div class="container">
-	<c:out value="${question.question}"/>
+	<p><c:out value="${question.question}"/></p>
 	<form method="post" action="<c:url value="/answers/add/"/>">
 	<div class="table-responsive">
 	<table class="table table-striped">
     <thead>
       <tr>
-        <th>Answers</th>
+        <th><p>Answers</p></th>
       </tr>
     </thead>
    <c:forEach var="answer" items="${answer}">
     <tbody>
       <tr>
-        <td><c:out value="${answer.answer}"/></td>
+        <td><p><c:out value="${answer.answer}"/></p></td>
      </tr>
       
     </tbody>
@@ -46,17 +46,17 @@
 	<input type="hidden" name="qid" value="${question.qId}">
 	
 	<div class="action-bar">
-	<button type="submit" onclick="myFunction()">Submit</button>
+	<button type="submit" id="button" onclick="myFunction()">Submit</button>
 </div>
 </div>
 
 	</form>
 	<!--  Footer Starts -->
-    <div class="container">
+    <div class="footer">
       <div class="row">
-        <p align="center" style="padding:30px;">Copyright &copy; 2016 ExperienceIT Alumni. All rights reserved. 
+        Copyright &copy; 2016 ExperienceIT Alumni. All rights reserved. 
 	     
-	    </p>
+	  
        </div>
     </div>
     

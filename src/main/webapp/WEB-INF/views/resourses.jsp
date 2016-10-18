@@ -88,17 +88,14 @@ contribute to our code to add features, fix bugs, playtest, and even translate t
 	
 
 
-	<p>To learn about Grand Circus please click the link below</p>
-
-
-	<a href=" http://www.grandcircus.co">Grand Circus</a>
+	
 </div>
 <!--  Footer Starts -->
-    <div class="container">
+    <div class="footer">
       <div class="row">
-        <p align="center" style="padding:30px;">Copyright &copy; 2016 ExperienceIT Alumni. All rights reserved. 
+     Copyright &copy; 2016 ExperienceIT Alumni. All rights reserved. 
 	     
-	    </p>
+	    
        </div>
     </div>
     

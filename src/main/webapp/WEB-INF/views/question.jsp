@@ -21,10 +21,10 @@
 <h1>
 	Forum
 </h1>
-<div>
-Please join the discussion! This forum covers Experience IT  community news,  and any questions students  have in mind regarding program
-You are welcome to  benefit from it and post your comments and answers to the questions .
-
+<div><p>
+Please join the discussion! This forum covers Experience IT  community news,  and any questions students  have in mind regarding program.
+You are welcome to  benefit from it and post your questions and answers to the questions.
+</p>
 </div>
 <div class="table-responsive">
 <table class="table table-striped">
@@ -36,7 +36,7 @@ You are welcome to  benefit from it and post your comments and answers to the qu
    <c:forEach var="question" items="${questions}">
     <tbody>
       <tr>
-        <td><a href="<c:url value="/questions/${question.qId}"/>"><c:out value="${question.question}"/></a></td>
+        <td><p><a href="<c:url value="/questions/${question.qId}"/>"><c:out value="${question.question}"/></a></p></td>
      </tr>
       
     </tbody>
@@ -52,17 +52,17 @@ You are welcome to  benefit from it and post your comments and answers to the qu
 	</div>
 	<div class="action-bar">
 	
-	<button type="submit" onclick="myFunction()">Submit</button>
+	<button type="submit" id="button" onclick="myFunction()">Submit</button>
 </div>
 
 	
 	</form>
 	<!--  Footer Starts -->
-    <div class="container">
+    <div class="footer">
       <div class="row">
-        <p align="center" style="padding:30px;">Copyright &copy; 2016 ExperienceIT Alumni. All rights reserved. 
+        Copyright &copy; 2016 ExperienceIT Alumni. All rights reserved. 
 	     
-	    </p>
+	   
        </div>
     </div>
     

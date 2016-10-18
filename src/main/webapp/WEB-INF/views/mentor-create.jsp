@@ -17,12 +17,13 @@
 <div class="container">
 <p>
 Mentoring is a process for the informal transmission of knowledge, social capital, and the psychosocial support 
-perceived by the recipient as relevant to work, career, or professional development;
+perceived by the recipient as relevant to work, career, or professional development.<br><br>
 If you have any questions in mind  regarding the the program our experienced and knowledgeable
-mentors are here to  help to guide you throughout the course to give you better understanding and knowledge. 
+mentors are here to  help and guide you throughout the course to give you better understanding and knowledge. 
 They  have been through all what you are going through. It is a learning and development partnership between your mentor  with vast 
 experience and 
-someone who wants to learn, you. Mentorship experience and relationship will be helpful to achieve your goal . So ask any questions you have in mind.
+someone who wants to learn, you.
+<br><br> Mentorship experience and relationship will be helpful to achieve your goal.
 
 
 </p>
@@ -84,18 +85,18 @@ someone who wants to learn, you. Mentorship experience and relationship will be 
   </div>
     <div class="form-group">
       <div class="col-sm-offset-2 col-sm-">
-        <button type="submit" class="btn btn-default">Submit</button>
+        <button type="submit" id="button">Submit</button>
       </div>
     </div>
   </form>
 </div>
 </div>
 <!--  Footer Starts -->
-    <div class="container">
+    <div class="footer">
       <div class="row">
-        <p align="center" style="padding:30px;">Copyright &copy; 2016 ExperienceIT Alumni. All rights reserved. 
+        Copyright &copy; 2016 ExperienceIT Alumni. All rights reserved. 
 	     
-	    </p>
+	 
        </div>
     </div>
     

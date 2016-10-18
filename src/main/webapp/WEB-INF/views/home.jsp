@@ -25,8 +25,8 @@
                    <div class="container">
                        <div class="carousel-caption">
                            <h1>Just Learn It</h1>
-                           <p style="font-size:25px;">Wanted to learn something new, just do it</p>
-                           <p><a href="https://slack.com/oauth/authorize?scope=identity.basic,identity.avatar,identity.email&client_id=4975543103.90426640038">	
+                           <p style="font-size:25px; text-align:center;">Wanted to learn something new, just do it</p>
+                           <p style=text-align:center;><a href="https://slack.com/oauth/authorize?scope=identity.basic,identity.avatar,identity.email&client_id=4975543103.90426640038">	
 							<img src="resources/Images/sign_in_with_slack.png"></a></p>
                        </div>                       
                    </div>
@@ -37,8 +37,8 @@
                    <div class="container">
                        <div class="carousel-caption">
                            <h1>Move with Confidence</h1>
-                           <p style="font-size:25px;">Get skills, get confidence</p>
-                           <p><a href="https://slack.com/oauth/authorize?scope=identity.basic,identity.avatar,identity.email&client_id=4975543103.90426640038">	
+                           <p style="font-size:25px; text-align:center;">Get skills, get confidence</p>
+                           <p style="text-align:center;"><a href="https://slack.com/oauth/authorize?scope=identity.basic,identity.avatar,identity.email&client_id=4975543103.90426640038">	
 							<img src="resources/Images/sign_in_with_slack.png"></a></p>
                        </div>                       
                    </div>
@@ -49,8 +49,8 @@
                    <div class="container">
                        <div class="carousel-caption">
                            <h1>Learn it together</h1>
-                           <p style="font-size:25px;">At Grand-Circus we believe that learning should be an enjoyable and rewarding experience</p>
-                           <p><a href="https://slack.com/oauth/authorize?scope=identity.basic,identity.avatar,identity.email&client_id=4975543103.90426640038">	
+                           <p style="font-size:25px;text-align:center;">At Grand-Circus we believe that learning should be an enjoyable and rewarding experience</p>
+                           <p style="text-align:center;"><a href="https://slack.com/oauth/authorize?scope=identity.basic,identity.avatar,identity.email&client_id=4975543103.90426640038">	
 							<img src="resources/Images/sign_in_with_slack.png"></a></p>
                        </div>                       
                    </div>
@@ -60,8 +60,8 @@
                    <div class="container">
                        <div class="carousel-caption">
                           <h1>Just Learn It</h1>
-                           <p style="font-size:25px;">Wanted to learn something new, just do it</p>
-                           <p><a href="https://slack.com/oauth/authorize?scope=identity.basic,identity.avatar,identity.email&client_id=4975543103.90426640038">	
+                           <p style="font-size:25px;text-align:center;">Wanted to learn something new, just do it</p>
+                           <p style="text-align:center;"><a href="https://slack.com/oauth/authorize?scope=identity.basic,identity.avatar,identity.email&client_id=4975543103.90426640038">	
 							<img src="resources/Images/sign_in_with_slack.png"></a></p>
                        </div>                       
                    </div>
@@ -71,8 +71,8 @@
                    <div class="container">
                        <div class="carousel-caption">
                            <h1>Move with Confidence</h1>
-                           <p style="font-size:25px;">Get skills, get confidence</p>
-                           <p><a href="https://slack.com/oauth/authorize?scope=identity.basic,identity.avatar,identity.email&client_id=4975543103.90426640038">	
+                           <p style="font-size:25px;text-align:center;">Get skills, get confidence</p>
+                           <p style="text-align:center;"><a href="https://slack.com/oauth/authorize?scope=identity.basic,identity.avatar,identity.email&client_id=4975543103.90426640038">	
 							<img src="resources/Images/sign_in_with_slack.png"></a></p>
                        </div>                       
                    </div>
@@ -89,11 +89,11 @@
       </div>         
     <!-- Carousel Complete -->
      <!--  Footer Starts -->
-    <div class="container">
+    <div class="footer">
       <div class="row">
-        <p align="center" style="padding:30px;">Copyright &copy; 2016 ExperienceIT Alumni. All rights reserved. 
+        Copyright &copy; 2016 ExperienceIT Alumni. All rights reserved. 
 	     
-	    </p>
+	    
        </div>
     </div>
     

@@ -43,7 +43,7 @@
 	<p>Sincerely, Revathy, Sadia, Mumeen, and Brent 
 	</p>
 	<!--  Footer Starts -->
-    <div class="container">
+    <div class="footer">
       <div class="row">
         <p align="center" style="padding:30px;">Copyright &copy; 2016 ExperienceIT Alumni. All rights reserved. 
 	     
