@@ -79,7 +79,7 @@ public class MentorController {
 			model.addAttribute("mentor", mentor);
 			
 			logger.info("POST /mentors/" + id + " -> mentor.jsp");
-			return "mentor";
+			return "redirect:/mentors";
 		}
 		
 		// Delete one user

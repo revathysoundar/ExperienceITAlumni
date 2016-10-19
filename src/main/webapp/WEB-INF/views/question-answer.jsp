@@ -21,6 +21,7 @@
 	<%@ include file="parts/login-bar.jsp" %>
 <div class="container">
 	<p><c:out value="${question.question}"/></p>
+	<p style="color:blue;">Posted by: <c:out value="${question.questionOwner}"/> on <c:out value="${question.date}"/></p>
 	<form method="post" action="<c:url value="/answers/add/"/>">
 	<div class="table-responsive">
 	<table class="table table-striped">
@@ -32,7 +33,9 @@
    <c:forEach var="answer" items="${answer}">
     <tbody>
       <tr>
-        <td><p><c:out value="${answer.answer}"/></p></td>
+        <td><p style="color:#337ab7;"><c:out value="${answer.answer}"/></p></td>
+        <td><p style="color:#337ab7;">Posted:<c:out value="${question.questionOwner}"/></p></td>
+      	<td><p style="color:#337ab7;"><c:out value="${question.date}"/></p></td>
      </tr>
       
     </tbody>

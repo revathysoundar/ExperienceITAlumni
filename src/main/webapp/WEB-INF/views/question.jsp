@@ -1,7 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
     <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <%--
 	On this page we have a form to edit a single question 
@@ -23,7 +24,7 @@
 </h1>
 <div><p>
 Please join the discussion! This forum covers Experience IT  community news,  and any questions students  have in mind regarding program.
-You are welcome to  benefit from it and post your questions and answers to the questions.
+You are welcome to  benefit from it and post your questions and answers.
 </p>
 </div>
 <div class="table-responsive">
@@ -37,6 +38,9 @@ You are welcome to  benefit from it and post your questions and answers to the q
     <tbody>
       <tr>
         <td><p><a href="<c:url value="/questions/${question.qId}"/>"><c:out value="${question.question}"/></a></p></td>
+    	
+		<td><p style="color:#337ab7;">Posted:<c:out value="${question.questionOwner}"/></p></td>
+      	<td><p style="color:#337ab7;"><c:out value="${question.date}"/></p></td>
      </tr>
       
     </tbody>

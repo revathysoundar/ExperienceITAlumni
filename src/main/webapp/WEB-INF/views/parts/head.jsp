@@ -14,6 +14,7 @@
       <style>
   		.bigIcon
   		{
+  		
   			font-size:40px;
   			padding-left:45px;
   			padding-right:130px;

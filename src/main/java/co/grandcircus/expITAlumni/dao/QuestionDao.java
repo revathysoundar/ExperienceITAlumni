@@ -12,7 +12,7 @@ public interface QuestionDao {
 
 	List<Question> getAllQuestions();
 	
-	int addQuestion(String question);
+	int addQuestion(String question,String questionOwner, String date);
 	
 	Question getQuestion(int id) throws NotFoundException;
 	

@@ -83,12 +83,15 @@ someone who wants to learn, you.
     </div>
   </div>
 
-	
-	<button type="submit" class="inline" id="button">Save Changes</button>
+	<div class="inline">
+	<button type="submit"  id="button">Save Changes</button>
+	</div>
 </form>
 
 <form method="post" action="<c:url value="/mentors/${mentor.id}/delete"/>">
+<div class="inline">
 	<button type="submit" class="inline" id="button">Delete this Mentor</button>
+	</div>
 </form>
 
 </div>
