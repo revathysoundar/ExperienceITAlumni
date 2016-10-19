@@ -9,6 +9,6 @@ public interface AnswerDao {
 	
 	List<Answer> getAnswerById(int qid);
 	
-	Integer addAnswer(Integer qid,String answer);
+	Integer addAnswer(Integer qid,String answer,String aOwner,String date);
 	
 }

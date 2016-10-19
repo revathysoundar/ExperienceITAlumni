@@ -65,7 +65,7 @@ someone who wants to learn, you.
    <div class="form-group">
       <label class="control-label col-sm-2" for="year">Year Graduated:</label>
       <div class="col-sm-4">
-        <input type="text" class="form-control" name="year graduated" value="${mentor.yearGraduated}">
+        <input type="text" class="form-control" name="yearGraduated" value="${mentor.yearGraduated}">
       </div>
    </div>
    <div class="form-group">
@@ -78,7 +78,7 @@ someone who wants to learn, you.
    
     <div class="col-sm-offset-2 col-sm-10">
       <div class="checkbox">
-        <label><input type="checkbox" value="${mentor.available}" <c:if test="${mentor.available}">checked</c:if>/>I'm Available</label>
+        <label><input type="checkbox" value="${mentor.available}" <c:if test="${mentor.available=='1'}">checked</c:if>/>I'm Available</label>
       </div>
     </div>
   </div>

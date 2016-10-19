@@ -46,7 +46,9 @@ private static final Logger logger = LoggerFactory.getLogger(AnswerDao.class);
 			Integer qId = result.getInt("qid");
 			Integer aid = result.getInt("aid");
 			String answer = result.getString("answer");
-			answerList.add(new Answer(qId,aid,answer));
+			String aOwner = result.getString("answerOwner");
+			String date = result.getString("date");
+			answerList.add(new Answer(qId,aid,answer,aOwner,date));
 
 			
 		} 
@@ -63,19 +65,23 @@ private static final Logger logger = LoggerFactory.getLogger(AnswerDao.class);
 	}
 }
 	@Override
-	public Integer addAnswer(Integer qid,String answer) {
+	public Integer addAnswer(Integer qid,String answer,String aOwner,String date) {
 		
 		
 		Answer answers = new Answer();
 		answers.setAnswer(answer);
+		answers.setAnswerOwner(aOwner);
+		answers.setDate(date);
 		answers.setqId(qid);
 		System.out.println(answers.getAnswer());
 		System.out.println(answers.getqId());
-		String sql = "INSERT INTO answers (qid,answer) VALUES (?,?)";
+		String sql = "INSERT INTO answers (qid,answer,answerOwner,date) VALUES (?,?,?,?)";
 		try (Connection connection = connectionFactory.getConnection();
 				PreparedStatement statement = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)) {
 			statement.setInt(1, answers.getqId());
 			statement.setString(2, answers.getAnswer());
+			statement.setString(3, answers.getAnswerOwner());
+			statement.setString(4, answers.getDate());
 			
 			System.out.println(answers.getAnswer());
 
@@ -87,7 +93,7 @@ private static final Logger logger = LoggerFactory.getLogger(AnswerDao.class);
 
 			try (ResultSet generatedKeys = statement.getGeneratedKeys()) {
 				if (generatedKeys.next()) {
-					answers.setqId(generatedKeys.getInt(1));
+					answers.setaId(generatedKeys.getInt(1));
 				} else {
 					throw new SQLException("Creating answer failed, no ID obtained.");
 				}

@@ -33,9 +33,9 @@
    <c:forEach var="answer" items="${answer}">
     <tbody>
       <tr>
-        <td><p style="color:#337ab7;"><c:out value="${answer.answer}"/></p></td>
-        <td><p style="color:#337ab7;">Posted:<c:out value="${question.questionOwner}"/></p></td>
-      	<td><p style="color:#337ab7;"><c:out value="${question.date}"/></p></td>
+        <td style="width:60%;"><p style="color:#337ab7;"><c:out value="${answer.answer}"/></p></td>
+        <td><p style="color:#337ab7;">Posted:<c:out value="${answer.answerOwner}"/></p></td>
+      	<td><p style="color:#337ab7;"><c:out value="${answer.date}"/></p></td>
      </tr>
       
     </tbody>

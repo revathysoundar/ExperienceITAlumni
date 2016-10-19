@@ -5,20 +5,40 @@ public class Answer {
 	 private Integer aId;
      private String answer;
      private Integer qId;
+     private String answerOwner;
+     private String date;
      
      public Answer()
      {
     	 
      }
      
-     public Answer(Integer qId, Integer aId, String answer) {
+     public Answer(Integer qId, Integer aId, String answer, String answerOwner,String date) {
          super();
          this.aId = aId;
          this.answer = answer;
-         this.qId = qId; 
+         this.qId = qId;
+         this.answerOwner = answerOwner;
+         this.date = date;
      }
      
-     public Integer getaId() {
+     public String getAnswerOwner() {
+		return answerOwner;
+	}
+
+	public void setAnswerOwner(String answerOwner) {
+		this.answerOwner = answerOwner;
+	}
+
+	public String getDate() {
+		return date;
+	}
+
+	public void setDate(String date) {
+		this.date = date;
+	}
+
+	public Integer getaId() {
          return aId;
      }
      public void setaId(Integer aId) {
