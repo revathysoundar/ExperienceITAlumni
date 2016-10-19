@@ -39,7 +39,9 @@ You are welcome to  benefit from it and post your questions and answers.
       <tr>
         <td style="width:60%;"><p><a href="<c:url value="/questions/${question.qId}"/>"><c:out value="${question.question}"/></a></p></td>
     	<td><p style="color:#337ab7;">Posted:<c:out value="${question.questionOwner}"/></p></td>
-      	<td><p style="color:#337ab7;"><c:out value="${question.date}"/></p></td>
+      	<td><p style="color:#337ab7;"><c:set var="string1" value="${question.date}"/>
+      	<c:set var="string2" value="${fn:substring(string1, 0,19)}" />
+      	<c:out value="${string2}"/></p></td>
      </tr>
       
     </tbody>

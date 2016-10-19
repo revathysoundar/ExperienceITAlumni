@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
  <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-   
+   <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <%--
 	On this page we list all the mentors.
 	
@@ -35,7 +35,10 @@
       <tr>
         <td style="width:60%;"><p style="color:#337ab7;"><c:out value="${answer.answer}"/></p></td>
         <td><p style="color:#337ab7;">Posted:<c:out value="${answer.answerOwner}"/></p></td>
-      	<td><p style="color:#337ab7;"><c:out value="${answer.date}"/></p></td>
+      	<td><p style="color:#337ab7;">
+      	<c:set var="string1" value="${answer.date}"/>
+      	<c:set var="string2" value="${fn:substring(string1, 0,19)}" />
+      	<c:out value="${string2}"/></p></td>
      </tr>
       
     </tbody>
