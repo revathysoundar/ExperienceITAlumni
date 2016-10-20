@@ -1,13 +1,16 @@
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ page session="false" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ page session="false"%>
 <html>
 <head>
 <link rel="stylesheet" href="resources/main.css">
 <link rel="stylesheet" href="resources/bootstrap/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>	
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script
+	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
 <body>
+
 <div class="container">
 <div class="img"><img src="resources/Images/ExperienceITAlumniLOGO.png" ></div>
 <!--  Carousel  -->   
@@ -106,13 +109,9 @@
     $('#myCarousel').carousel
     ({
         interval: 2500,
+</script>
 
-
-
-        })
-
-    </script>
-
+	
 
 
 </body>

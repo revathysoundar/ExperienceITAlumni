@@ -21,33 +21,27 @@ import co.grandcircus.expITAlumni.rest.SlackService;
 
 public class SlackController {
 	private static final Logger logger = LoggerFactory.getLogger(SlackController.class);
-	
+
 	@Autowired
 	private SlackService slackService;
-	
-	
+
 	@RequestMapping(value = "/slack", method = RequestMethod.GET)
-	public String getAuthorization(@RequestParam(value="code")String code,
-			Model model, HttpSession session) {
-		
+	public String getAuthorization(@RequestParam(value = "code") String code, Model model, HttpSession session) {
+
 		Login clogin = slackService.getAccessTokenAt(code);
-		
-		try{
-			
+
+		try {
+
 			session.setAttribute("currentLogin", clogin);
-			
-		}catch(NotFoundException ex)
-		{
-			model.addAttribute("message","Incorrect email or password");
+
+		} catch (NotFoundException ex) {
+			model.addAttribute("message", "Incorrect email or password");
 			return "/home";
 		}
-		if(clogin.getName().equals("null"))
+		if (clogin.getName().equals("null"))
 			return "/home";
 		else
 			return "/index";
-}
-	
-	
-	
+	}
 
 }

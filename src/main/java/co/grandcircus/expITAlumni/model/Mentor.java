@@ -15,19 +15,18 @@ public class Mentor {
 	public Integer getId() {
 		return id;
 	}
-	
-	
+
 	public Mentor(Integer id, String firstName, String lastName, String email) {
 		super();
 		this.id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.email = email;
-		
+
 	}
-	public Mentor()
-	{
-		
+
+	public Mentor() {
+
 	}
 
 	public Mentor(Integer id, String firstName, String lastName, String email, String company, String title,

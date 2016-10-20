@@ -23,51 +23,45 @@ import co.grandcircus.expITAlumni.exception.NotFoundException;
 @Repository
 @Primary
 
-public class AnswerDaoJdbcImpl implements AnswerDao{
-private static final Logger logger = LoggerFactory.getLogger(AnswerDao.class);
+public class AnswerDaoJdbcImpl implements AnswerDao {
+	private static final Logger logger = LoggerFactory.getLogger(AnswerDao.class);
 
-	
 	@Autowired
 	JdbcConnectionFactory connectionFactory;
-	
-	
-	
-	@Override
-	public List<Answer> getAnswerById(int qid) throws NotFoundException{
-		
-	
-	String sql = "SELECT * FROM answers WHERE qid = ?";
-	try (Connection connection = connectionFactory.getConnection();
-			PreparedStatement statement = connection.prepareStatement(sql)) {
-		statement.setInt(1, qid);
-		ResultSet result = statement.executeQuery();
-		List<Answer> answerList = new ArrayList<Answer>();
-		while(result.next()) {
-			Integer qId = result.getInt("qid");
-			Integer aid = result.getInt("aid");
-			String answer = result.getString("answer");
-			String aOwner = result.getString("answerOwner");
-			String date = result.getString("date");
-			answerList.add(new Answer(qId,aid,answer,aOwner,date));
 
-			
-		} 
-		
-		for(Answer a: answerList)
-		{
-			System.out.println(a.getaId());
-			System.out.println(a.getqId());
-			
-		}
-		return answerList;
-		}catch (SQLException ex) {
-		throw new RuntimeException(ex);
-	}
-}
 	@Override
-	public Integer addAnswer(Integer qid,String answer,String aOwner,String date) {
-		
-		
+	public List<Answer> getAnswerById(int qid) throws NotFoundException {
+
+		String sql = "SELECT * FROM answers WHERE qid = ?";
+		try (Connection connection = connectionFactory.getConnection();
+				PreparedStatement statement = connection.prepareStatement(sql)) {
+			statement.setInt(1, qid);
+			ResultSet result = statement.executeQuery();
+			List<Answer> answerList = new ArrayList<Answer>();
+			while (result.next()) {
+				Integer qId = result.getInt("qid");
+				Integer aid = result.getInt("aid");
+				String answer = result.getString("answer");
+				String aOwner = result.getString("answerOwner");
+				String date = result.getString("date");
+				answerList.add(new Answer(qId, aid, answer, aOwner, date));
+
+			}
+
+			for (Answer a : answerList) {
+				System.out.println(a.getaId());
+				System.out.println(a.getqId());
+
+			}
+			return answerList;
+		} catch (SQLException ex) {
+			throw new RuntimeException(ex);
+		}
+	}
+
+	@Override
+	public Integer addAnswer(Integer qid, String answer, String aOwner, String date) {
+
 		Answer answers = new Answer();
 		answers.setAnswer(answer);
 		answers.setAnswerOwner(aOwner);
@@ -82,7 +76,7 @@ private static final Logger logger = LoggerFactory.getLogger(AnswerDao.class);
 			statement.setString(2, answers.getAnswer());
 			statement.setString(3, answers.getAnswerOwner());
 			statement.setString(4, answers.getDate());
-			
+
 			System.out.println(answers.getAnswer());
 
 			int affectedRows = statement.executeUpdate();
@@ -105,8 +99,5 @@ private static final Logger logger = LoggerFactory.getLogger(AnswerDao.class);
 		}
 
 	}
-	
-	
-	}
 
-
+}

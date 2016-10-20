@@ -25,53 +25,47 @@ import co.grandcircus.expITAlumni.model.Question;
 @Controller
 public class QuestionController {
 
-	
 	private static final Logger logger = LoggerFactory.getLogger(QuestionController.class);
-	
+
 	@Autowired
 	private QuestionDao questionDao;
-	
-	
-	
-	
+
 	@RequestMapping("/questions")
 	public String listQuestions(Model model) {
 		List<Question> questionList;
-		
+
 		questionList = questionDao.getAllQuestions();
-			
+
 		model.addAttribute("questions", questionList);
-		
 
 		logger.info("/questions -> question.jsp");
 		return "question";
 	}
-	
+
 	@RequestMapping(value = "/questions/add", method = RequestMethod.POST)
-	public String addQuestion(Model model,@RequestParam(value="question")String question,
-			HttpSession session) {
-		
+	public String addQuestion(Model model, @RequestParam(value = "question") String question, HttpSession session) {
+
 		DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd hh:mm:ss");
 		Date date = new Date();
-		
+
 		Login logDetail = (Login) session.getAttribute("currentLogin");
 		String qOwner = logDetail.getName();
-		
+
 		System.out.println(qOwner);
 		String sysDate = dateFormat.format(date);
 		System.out.println(sysDate);
-		
+
 		System.out.println(question);
-		questionDao.addQuestion(question,qOwner,sysDate);
+		questionDao.addQuestion(question, qOwner, sysDate);
 		model.asMap().clear();
-		
+
 		logger.info("POST /questions/add -> redirect to /questions");
 		return "redirect:/questions";
 	}
-	
+
 	@Autowired
 	private AnswerDao answerDao;
-	
+
 	@RequestMapping(value = "/questions/{id}", method = RequestMethod.GET)
 	public String displayQuestion(@PathVariable int id, Model model) {
 		model.addAttribute("id", id);
@@ -80,7 +74,5 @@ public class QuestionController {
 		logger.info("GET /questions/" + id + " -> question-list.jsp");
 		return "question-answer";
 	}
-	
-	
-	
+
 }
