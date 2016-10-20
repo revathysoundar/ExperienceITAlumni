@@ -4,6 +4,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
+import java.util.TimeZone;
 
 import javax.servlet.http.HttpSession;
 
@@ -46,6 +47,7 @@ public class QuestionController {
 	public String addQuestion(Model model, @RequestParam(value = "question") String question, HttpSession session) {
 
 		DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd hh:mm:ss");
+		dateFormat.setTimeZone(TimeZone.getTimeZone("EST"));
 		Date date = new Date();
 
 		Login logDetail = (Login) session.getAttribute("currentLogin");

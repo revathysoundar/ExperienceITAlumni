@@ -3,6 +3,7 @@ package co.grandcircus.expITAlumni.controller;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.TimeZone;
 
 import javax.servlet.http.HttpSession;
 
@@ -34,6 +35,7 @@ public class AnswerController {
 		System.out.println(answer);
 		System.out.println(id);
 		DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd hh:mm:ss");
+		dateFormat.setTimeZone(TimeZone.getTimeZone("EST"));
 		Date date = new Date();
 
 		Login logDetail = (Login) session.getAttribute("currentLogin");
