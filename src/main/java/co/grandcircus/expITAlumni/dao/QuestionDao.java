@@ -2,19 +2,15 @@ package co.grandcircus.expITAlumni.dao;
 
 import java.util.List;
 
-
 import co.grandcircus.expITAlumni.model.Question;
 import co.grandcircus.expITAlumni.exception.NotFoundException;
-
-
 
 public interface QuestionDao {
 
 	List<Question> getAllQuestions();
-	
-	int addQuestion(String question,String questionOwner, String date);
-	
+
+	int addQuestion(String question, String questionOwner, String date);
+
 	Question getQuestion(int id) throws NotFoundException;
-	
-	
+
 }

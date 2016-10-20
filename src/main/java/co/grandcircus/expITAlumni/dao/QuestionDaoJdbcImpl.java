@@ -18,17 +18,13 @@ import co.grandcircus.expITAlumni.model.Login;
 import co.grandcircus.expITAlumni.model.Question;
 import co.grandcircus.expITAlumni.exception.NotFoundException;
 
-
-
 @Repository
 @Primary
-public class QuestionDaoJdbcImpl  implements QuestionDao {
+public class QuestionDaoJdbcImpl implements QuestionDao {
 
-	
 	@Autowired
 	JdbcConnectionFactory connectionFactory;
-	
-	
+
 	@Override
 	public List<Question> getAllQuestions() {
 		String sql = "SELECT * FROM questions";
@@ -42,7 +38,7 @@ public class QuestionDaoJdbcImpl  implements QuestionDao {
 				String question = result.getString("question");
 				String qOwner = result.getString("questionOwner");
 				String date = result.getString("date");
-				questionList.add(new Question(id, question,qOwner,date));
+				questionList.add(new Question(id, question, qOwner, date));
 			}
 
 			return questionList;
@@ -52,9 +48,8 @@ public class QuestionDaoJdbcImpl  implements QuestionDao {
 	}
 
 	@Override
-	public int addQuestion(String question,String questionOwner, String date) {
-		
-		
+	public int addQuestion(String question, String questionOwner, String date) {
+
 		Question questions = new Question();
 		questions.setQuestion(question);
 		questions.setQuestionOwner(questionOwner);
@@ -88,7 +83,7 @@ public class QuestionDaoJdbcImpl  implements QuestionDao {
 		}
 
 	}
-	
+
 	@Override
 	public Question getQuestion(int id) throws NotFoundException {
 		String sql = "SELECT * FROM questions WHERE qid = ?";
@@ -102,7 +97,7 @@ public class QuestionDaoJdbcImpl  implements QuestionDao {
 				String qOwner = result.getString("questionOwner");
 				String date = result.getString("date");
 
-				return new Question(id, question,qOwner,date);
+				return new Question(id, question, qOwner, date);
 			} else {
 				throw new NotFoundException("No such question.");
 			}
@@ -110,7 +105,5 @@ public class QuestionDaoJdbcImpl  implements QuestionDao {
 			throw new RuntimeException(ex);
 		}
 	}
-	
-	
 
 }

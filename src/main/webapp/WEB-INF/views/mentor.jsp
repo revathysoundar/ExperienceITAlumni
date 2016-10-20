@@ -18,13 +18,21 @@
 <div class="container">
 
 <p>
-Mentoring is a process for the informal transmission of knowledge, social capital, and the psychosocial support 
-perceived by the recipient as relevant to work, career, or professional development.<br><br>
-If you have any questions in mind  regarding the the program our experienced and knowledgeable
-mentors are here to  help to guide you throughout the course to give you better understanding and knowledge 
-They  have been through all what you are going through. It is a learning and development partnership between your mentor  with vast 
-experience and 
-someone who wants to learn, you.
+<p>
+			Mentoring is a process for the informal transmission of knowledge,
+			guidance and the psychosocial support perceived by the recipient as
+			relevant to work, career, or professional development.<br>
+			<br> If you have any questions in mind regarding the the program
+			our experienced and knowledgeable mentors are here to help and guide
+			you throughout the course to give you better understanding and
+			knowledge. They have been through all of what you are going through
+			already . It is a learning and development partnership between your
+			mentor with vast experience and someone who wants to learn, you. <br>
+			<br> Mentorship experience and relationship will be helpful to
+			achieve your goal.
+
+
+		</p>
 <br><br> Mentorship experience and relationship will be helpful to achieve your goal. 
 
 

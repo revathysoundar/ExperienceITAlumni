@@ -17,18 +17,17 @@
 	<h1 style="color:"#bdb76b;">Welcome</h1>
 <p>
 	Experience IT Alumni has come a long way from its beginnings as an
-	idea for a final project. When the four Experience IT students
-	first started out, their goal (providing an additional communication
-	hub for recent acceptance, and current Experience IT students), drove
-	them to do more with their project; and decided to turn hard work and
-	inspiration, into an on-going way to keep students motivated,
-	inspired, and connected with those who can relate to someone in their
-	seat.<br><br> We are thrilled to have this idea become more than a project,
-	and hope that it becomes another great asset in the Experience IT and
-	Grand Circus community.
+	ideal for a final project. When we ,the four Experience IT students
+	first started out our goal was to provide an additional communication
+	hub for recent acceptees and current Experience IT students and we
+	decided to turn hard work and inspiration into an on-going way to keep
+	students motivated, inspired, and connected with those who can relate
+	to someone in their seat.<br><br> We are thrilled to have this idea become more
+	than a project and hope that it becomes another great asset in the
+	Experience IT and Grand Circus community
 	We hope that you utilize the services as much as we enjoy
 		offering them to you. If you have any questions or comments ,please
-		don't hesitate to contact us. <br><br>
+		don't hasitae to contack us. <br><br>
 	To learn about the Grand Circus please click the link below
    <a href = " http://www.grandcircus.co">Click Here
    </a>

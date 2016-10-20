@@ -8,13 +8,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class FAQsController {
-	
-private static final Logger logger = LoggerFactory.getLogger(FAQsController.class);
-	
-	
+
+	private static final Logger logger = LoggerFactory.getLogger(FAQsController.class);
+
 	@RequestMapping("/faqs")
-	public String  home (Model model ){
-	return "faqs";
+	public String home(Model model) {
+		return "faqs";
 	}
 
 }
