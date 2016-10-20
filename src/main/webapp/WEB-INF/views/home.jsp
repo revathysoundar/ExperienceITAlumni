@@ -8,18 +8,20 @@
       <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>	
 </head>
 <body>
-
+<div class="container">
 <div class="img"><img src="resources/Images/ExperienceITAlumniLOGO.png" ></div>
 <!--  Carousel  -->   
     
-      <div id="myCarousel" class="carousel slide">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
               <li data-target="#myCarousel" data-slide-to="1" class=""></li>
               <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+              <li data-target="#myCarousel" data-slide-to="3" calss=""></li>
+              <li data-target="#myCarousel" data-slide-to="4" class=""></li>
             </ol>  
           
-            <div class="carousel-inner">            
+            <div class="carousel-inner" role="listbox">            
                 <div class="item active">
                   <img src="resources/Images/01.jpg" />
                    <div class="container">
@@ -32,7 +34,7 @@
                    </div>
                 </div>
                 
-                 <div class="item ">
+                 <div class="item">
                   <img src="resources/Images/02.jpg"/>
                    <div class="container">
                        <div class="carousel-caption">
@@ -44,18 +46,18 @@
                    </div>
                 </div>
                 
-                <div class="item ">
+                <div class="item">
                   <img src="resources/Images/03.jpg" />
                    <div class="container">
                        <div class="carousel-caption">
                            <h1>Learn it together</h1>
-                           <p style="font-size:25px;text-align:center;">At Grand-Circus we believe that learning should be an enjoyable and rewarding experience</p>
+                           <p style="font-size:25px;text-align:center;">At Grand Circus we believe that learning should be an enjoyable and rewarding experience</p>
                            <p style="text-align:center;"><a href="https://slack.com/oauth/authorize?scope=identity.basic,identity.avatar,identity.email&client_id=4975543103.90426640038">	
 							<img src="resources/Images/sign_in_with_slack.png"></a></p>
                        </div>                       
                    </div>
                 </div>
-                <div class="item ">
+                <div class="item">
                   <img src="resources/Images/04.jpg" />
                    <div class="container">
                        <div class="carousel-caption">
@@ -66,7 +68,7 @@
                        </div>                       
                    </div>
                 </div>
-                <div class="item ">
+                <div class="item">
                   <img src="resources/Images/05.jpg" />
                    <div class="container">
                        <div class="carousel-caption">
@@ -79,14 +81,16 @@
                 </div>
             </div> 
           
-          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left"></span>
-          </a>
-            
-          <a class="right carousel-control" href="#myCarousel" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right"></span>
-          </a>          
+          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>    
       </div>         
+      </div>
     <!-- Carousel Complete -->
      <!--  Footer Starts -->
     <div class="footer">

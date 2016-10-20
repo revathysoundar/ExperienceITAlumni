@@ -100,7 +100,4 @@ someone who wants to learn, you.
        </div>
     </div>
     
-    <!-- Footer Ends  -->
-    
-</body>
-</html>
+

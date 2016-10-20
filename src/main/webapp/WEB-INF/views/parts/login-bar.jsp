@@ -1,6 +1,5 @@
 
 
-
 <!--Navigation bar-->
 	<section id="Navlist">
 	 
